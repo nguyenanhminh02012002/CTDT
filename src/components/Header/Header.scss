@@ -1,0 +1,105 @@
+$primary-color: #060a52; // Màu xanh chủ đạo
+$text-color: #000000; // Màu đen cho text
+$header-bg: #f5f5f5; // Màu nền header
+$hover-color: #f4240a; // Màu khi hover
+$icon-bg-color: #e0e0e0; // Màu nền xám cho icon
+$icon-border-radius: 50%; // Bo góc icon
+$name-color: #ff0000; // Màu đỏ cho tên người dùng
+
+// Các kích thước cho header và logo
+$logo-max-width: 15%; // Giảm kích thước logo xuống 15%
+$title-font-size: 25px; // Kích thước font của tiêu đề
+$title-font-weight: bold; // Đậm tiêu đề
+$title-color: #3c4069; // Màu cho tiêu đề
+$function-text-color: #555555; // Màu cho các chức năng người dùng
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: $header-bg;
+  border-bottom: 1px solid #ddd;
+
+  .logo-header {
+    flex: 1 1 25%; // Chiếm 1/4 không gian, không đẩy các phần tử khác
+    padding: 10px 0;
+
+    img {
+      width: 100%;
+      height: 50px;
+      object-fit: contain; // Đảm bảo logo không bị méo
+    }
+  }
+
+  .title-function {
+    flex: 2 1 50%; // Chiếm 2/4 không gian, không đẩy các phần tử khác
+    font-size: $title-font-size;
+    font-weight: $title-font-weight;
+    color: $title-color; // Màu cho tiêu đề
+    text-align: left; // Căn sát nề phải của logo
+    margin-left: 20px;
+    text-transform: none; // Không in hoa tất cả các chữ
+  }
+
+  .info-user {
+    flex: 1 1 25%; // Chiếm 1/4 không gian, không đẩy các phần tử khác
+    display: flex;
+    justify-content: flex-start; // Căn sát bên trái
+    align-items: center;
+    gap: 15px;
+    margin-top: 8px;
+
+    .icon-user {
+      background-color: $icon-bg-color; // Nền xám cho icon
+      border-radius: $icon-border-radius; // Viền bo cong
+      padding: 10px; // Khoảng cách xung quanh icon
+      font-size: 24px;
+      color: $text-color; // Màu đen cho icon
+    }
+
+    .user-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2px;
+
+      .hello {
+        font-size: 14px;
+        color: $text-color;
+      }
+
+      .name-user {
+        font-size: 16px;
+        font-weight: bold;
+        color: $name-color; // Màu đỏ cho tên người dùng
+      }
+
+      .function-user {
+        display: flex;
+        gap: 15px;
+        // margin-left: 10px;
+        // justify-content: space-around;
+
+        button {
+          font-size: 14px;
+          color: $function-text-color;
+          cursor: pointer;
+          padding: 5px 10px;
+          border: none;
+          background-color: transparent;
+          transition: color 0.3s, background-color 0.3s;
+          text-decoration: underline;
+
+          // &:hover {
+          //   color: $hover-color;
+          //   background-color: $hover-color;
+          // }
+        }
+      }
+    }
+  }
+}

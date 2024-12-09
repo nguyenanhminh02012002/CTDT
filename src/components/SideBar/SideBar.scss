@@ -1,0 +1,53 @@
+$primary-color: #007bff; // Màu xanh chủ đạo
+$hover-color: #f0f0f0; // Màu nền khi hover
+$text-color: #333333; // Màu chữ mặc định
+$background-sidebar: #f8f9fa; // Màu nền của sidebar
+$border-color: #ddd; // Màu viền
+$active-color: #0056b3; // Màu khi mục được chọn
+$padding: 10px; // Padding cho các mục
+
+.container-sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: $background-sidebar;
+  width: auto;
+  // height: 100%; // Sidebar sẽ chiếm toàn bộ chiều cao của màn hình
+  box-sizing: border-box;
+  border-right: 1px solid $border-color;
+  overflow-y: auto;
+
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #454c8e;
+    padding: 7px 0px 7px 15px;
+  }
+
+  .manager {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; // Đảm bảo các mục chiếm không gian còn lại trong sidebar
+  }
+
+  .manager-children {
+    font-size: 16px;
+    color: #000;
+    padding: 7px 0 7px 25px;
+    margin: 0;
+    border: 1px solid $border-color;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    flex-shrink: 0;
+
+    &:hover {
+      background-color: $hover-color;
+      color: $primary-color;
+    }
+
+    &.active {
+      background-color: $primary-color;
+      color: white;
+    }
+  }
+}

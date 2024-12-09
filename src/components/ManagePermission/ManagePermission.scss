@@ -1,0 +1,37 @@
+/* ManagePermission.scss */
+.header-home-page {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.btn-add {
+  display: flex;
+  justify-content: flex-end; // Align the button to the right
+  margin-bottom: 50px;
+  margin-right: 70px;
+}
+
+.btn {
+  background-color: #acb0d3;
+  color: #000;
+  border: 1px solid #000;
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #454c8e;
+  }
+
+  svg {
+    margin-right: 8px;
+  }
+}
+
+.table-wrapper {
+  position: relative;
+  min-height: 300px;
+}

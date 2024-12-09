@@ -1,0 +1,18 @@
+$primary-color: #007bff; // Màu xanh chủ đạo
+$background-color: #f8f9fa; // Màu nền trang
+$title-background: #ccc; // Màu nền cho tiêu đề
+$text-color: #333; // Màu chữ
+
+.header-home-page {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  background-color: #ccc;
+  padding: 7px 0 7px 20px;
+  margin-bottom: 20px;
+}
+
+.container-home-page div {
+  font-size: 16px;
+  padding-left: 20px;
+}
