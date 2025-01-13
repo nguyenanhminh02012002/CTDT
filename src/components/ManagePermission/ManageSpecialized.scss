@@ -1,0 +1,106 @@
+/* Tổng thể giao diện */
+.container-specialize {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 30px 40px 0px 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  /* Nút thêm mới */
+  .btn-add {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    align-items: center;
+
+    .title-specialized {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .right-action {
+      display: flex;
+      gap: 20px;
+
+      .btn {
+        background-color: green;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #1d8a2b;
+          color: #fff;
+        }
+
+        span {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+
+  /* Bảng */
+  .ant-table {
+    .ant-table-thead > tr > th {
+      background-color: #ddd;
+      font-size: 16px;
+      color: #000;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    .ant-table-tbody > tr > td {
+      text-align: left;
+      vertical-align: middle;
+      color: #000; /* Đảm bảo màu chữ là #000 */
+    }
+
+    /* Chỉ cột STT căn giữa */
+    .ant-table-cell:first-child {
+      text-align: center;
+    }
+
+    /* Phân trang (Pagination) */
+    .ant-pagination {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+
+      .ant-pagination-item {
+        border-color: #454c8e;
+      }
+
+      .ant-pagination-item-active {
+        background-color: #454c8e;
+        border-color: #454c8e;
+
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+/* Hover hàng trong bảng */
+.ant-table-tbody > tr:hover > td {
+  background-color: #f9f9f9;
+}
+
+/* Phần header của bảng */
+.ant-table-thead > tr > th {
+  padding: 12px;
+  font-size: 16px;
+  color: #000;
+}
+
+/* Phần nội dung bảng */
+.ant-table-tbody > tr > td {
+  color: #000; /* Màu chữ trong bảng là #000 */
+}

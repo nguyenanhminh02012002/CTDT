@@ -1,0 +1,128 @@
+.manage-users {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px 20px 30px;
+  margin: 20px 40px 50px 20px;
+
+  .btn-add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+
+    .search-username {
+      width: 300px;
+      margin-right: 10px;
+      margin-left: 20px;
+      font-size: 16px;
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+
+      .filter-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        padding: 4px;
+        margin-right: 15px;
+
+        .dot-red {
+          position: absolute;
+          top: 8px;
+          right: 8px;
+          width: 8px;
+          height: 8px;
+          background-color: red;
+          border-radius: 5px;
+        }
+
+        svg {
+          font-size: 20px;
+          stroke-width: 0.5px;
+          color: #555;
+        }
+
+        &:hover {
+          color: #acb0d3;
+        }
+      }
+
+      .btn {
+        background-color: #acb0d3;
+        color: #000;
+        border: 1px solid #000;
+        padding: 8px 15px;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #5c6e88;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.filter-dropdown {
+  padding: 15px;
+  width: 350px; // Thay đổi chiều rộng của dropdown
+
+  .filter-title {
+    background-color: #fff;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 16px; // Bôi đậm tiêu đề filter
+  }
+
+  .filter-item {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; // Đảm bảo các ô chọn đều trải đều theo chiều ngang
+
+    div {
+      width: 125px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .ant-select {
+      flex: 1; // Đảm bảo Select sẽ chiếm phần còn lại của dòng
+    }
+  }
+
+  .filter-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 30px; // Tạo khoảng cách giữa các nút
+    width: 100%;
+
+    button {
+      width: 100px; // Đảm bảo các nút có chiều rộng đồng đều
+      text-align: center; // Căn giữa văn bản trong nút
+      background-color: #ccc;
+    }
+
+    .btn-filter {
+      background-color: #5c63a1;
+      color: #fff;
+
+      &:hover {
+        background-color: #5c63a1;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.modal-container {
+  .divider {
+    margin-bottom: 20px; // Đảm bảo đường kẻ phân cách có khoảng cách dưới
+  }
+
+  .action-buttons {
+    display: flex;
+    justify-content: space-around; // Căn chỉnh hai nút sang hai bên
+    margin-top: 10px; // Khoảng cách từ form đến các nút
+    padding-bottom: 15px;
+
+    button {
+      // width: 15%; // Giới hạn chiều rộng của mỗi nút để chúng không chồng lên nhau
+      padding: 5px 20px; // Tăng chiều cao cho nút để dễ nhìn
+      border-radius: 5px;
+
+      &:first-child {
+        background-color: #d3d3d3; // Nút "Hủy" có background xám
+        border: 1px solid #ccc; // Đảm bảo nút "Hủy" có đường viền nhẹ
+        color: #333; // Màu chữ cho nút "Hủy"
+      }
+
+      &:last-child {
+        background-color: #454c8e; // Nút "Lưu" có background màu #454c8e
+        border: none; // Bỏ viền cho nút "Lưu"
+        color: white; // Màu chữ cho nút "Lưu"
+      }
+
+      &:hover {
+        opacity: 0.8; // Khi hover vào nút, làm mờ một chút
+      }
+
+      &:focus {
+        outline: none; // Xóa outline khi nút được focus
+      }
+    }
+  }
+}

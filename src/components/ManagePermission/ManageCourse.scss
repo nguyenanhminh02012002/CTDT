@@ -1,0 +1,97 @@
+.container-page-manage-course {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px 20px 30px;
+  margin: 20px 40px 50px 20px;
+
+  .header-contain {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .title-header {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .right-action {
+    display: flex;
+    gap: 20px;
+
+    .search-username {
+      width: 300px;
+    }
+
+    .btn {
+      background-color: green;
+      border-radius: 5px;
+      color: #fff;
+      border: none;
+      padding: 8px 15px;
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #1d8a2b;
+        color: #fff;
+      }
+
+      span {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .content {
+    margin-top: 30px;
+
+    .time-change-course {
+      font-size: 16px;
+      margin-bottom: 15px;
+      // text-align: end;
+      display: flex;
+      justify-content: end;
+
+      .time-red {
+        margin-left: 5px;
+        color: #8b0101;
+      }
+    }
+
+    .selected {
+      margin-bottom: 20px;
+      padding: 30px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .table-info {
+      .ant-table-thead {
+        color: #fff;
+
+        .ant-table-cell {
+          font-weight: 450;
+          font-size: 16px;
+        }
+      }
+    }
+    .ant-table {
+      border: 1px solid rgba(138, 10, 10, 0.2);
+      .ant-table-thead > tr > th {
+        background-color: #8b0101;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 450;
+      }
+    }
+  }
+
+  .title-specialized {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}

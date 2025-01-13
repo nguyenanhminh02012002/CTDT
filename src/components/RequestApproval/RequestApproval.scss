@@ -1,0 +1,143 @@
+.content-page-approval {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 30px 40px 0px 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  .header-table {
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .draft-table,
+  .approval-request-table,
+  .approval-history-table {
+    background-color: #ffffff;
+    padding: 20px;
+  }
+}
+
+.ant-menu-horizontal {
+  border-bottom: none;
+
+  .ant-menu-item {
+    font-size: 16px;
+    // font-weight: 450;
+    color: #ccc;
+    margin-left: 20px;
+
+    &.ant-menu-item-selected {
+      color: rgb(145, 7, 7);
+      border-bottom: 2px solid rgb(145, 7, 7);
+    }
+  }
+}
+
+.ant-table {
+  .ant-table-thead > tr > th {
+    background-color: #ddd;
+    color: black;
+    font-weight: bold;
+  }
+
+  .ant-table-tbody > tr > td {
+    color: black;
+
+    &:nth-child(1) {
+      color: rgb(145, 7, 7);
+    }
+  }
+}
+
+.ant-menu-horizontal .ant-menu-item a {
+  text-decoration: none;
+}
+
+// Thêm style khi hover để đảm bảo không bị gạch chân khi di chuột
+.ant-menu-horizontal .ant-menu-item:hover a {
+  text-decoration: none;
+}
+
+:where(.css-dev-only-do-not-override-1wwf28x).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-item-selected::after,
+:where(.css-dev-only-do-not-override-1wwf28x).ant-menu-light
+  > .ant-menu.ant-menu-horizontal
+  > .ant-menu-item-selected::after,
+:where(.css-dev-only-do-not-override-1wwf28x).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-submenu-selected::after,
+:where(.css-dev-only-do-not-override-1wwf28x).ant-menu-light
+  > .ant-menu.ant-menu-horizontal
+  > .ant-menu-submenu-selected::after {
+  border-bottom: none !important;
+}
+
+:where(.css-dev-only-do-not-override-1wwf28x).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-item:hover::after,
+:where(.css-dev-only-do-not-override-1wwf28x).ant-menu-light
+  > .ant-menu.ant-menu-horizontal
+  > .ant-menu-item:hover::after,
+:where(.css-dev-only-do-not-override-1wwf28x).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-submenu:hover::after,
+:where(.css-dev-only-do-not-override-1wwf28x).ant-menu-light
+  > .ant-menu.ant-menu-horizontal
+  > .ant-menu-submenu:hover::after,
+:where(.css-dev-only-do-not-override-1wwf28x).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-item-active::after,
+:where(.css-dev-only-do-not-override-1wwf28x).ant-menu-light
+  > .ant-menu.ant-menu-horizontal
+  > .ant-menu-item-active::after,
+:where(.css-dev-only-do-not-override-1wwf28x).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-submenu-active::after,
+:where(.css-dev-only-do-not-override-1wwf28x).ant-menu-light
+  > .ant-menu.ant-menu-horizontal
+  > .ant-menu-submenu-active::after,
+:where(.css-dev-only-do-not-override-1wwf28x).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-item-open::after,
+:where(.css-dev-only-do-not-override-1wwf28x).ant-menu-light
+  > .ant-menu.ant-menu-horizontal
+  > .ant-menu-item-open::after,
+:where(.css-dev-only-do-not-override-1wwf28x).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-submenu-open::after,
+:where(.css-dev-only-do-not-override-1wwf28x).ant-menu-light
+  > .ant-menu.ant-menu-horizontal
+  > .ant-menu-submenu-open::after {
+  border-bottom-width: 2px;
+  border-bottom-color: none !important;
+}
+
+:where(.css-dev-only-do-not-override-1wwf28x).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-item:hover::after,
+:where(.css-dev-only-do-not-override-1wwf28x).ant-menu-light
+  > .ant-menu.ant-menu-horizontal
+  > .ant-menu-item:hover::after,
+:where(.css-dev-only-do-not-override-1wwf28x).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-submenu:hover::after,
+:where(.css-dev-only-do-not-override-1wwf28x).ant-menu-light
+  > .ant-menu.ant-menu-horizontal
+  > .ant-menu-submenu:hover::after,
+:where(.css-dev-only-do-not-override-1wwf28x).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-item-active::after,
+:where(.css-dev-only-do-not-override-1wwf28x).ant-menu-light
+  > .ant-menu.ant-menu-horizontal
+  > .ant-menu-item-active::after,
+:where(.css-dev-only-do-not-override-1wwf28x).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-submenu-active::after,
+:where(.css-dev-only-do-not-override-1wwf28x).ant-menu-light
+  > .ant-menu.ant-menu-horizontal
+  > .ant-menu-submenu-active::after,
+:where(.css-dev-only-do-not-override-1wwf28x).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-item-open::after,
+:where(.css-dev-only-do-not-override-1wwf28x).ant-menu-light
+  > .ant-menu.ant-menu-horizontal
+  > .ant-menu-item-open::after,
+:where(.css-dev-only-do-not-override-1wwf28x).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-submenu-open::after,
+:where(.css-dev-only-do-not-override-1wwf28x).ant-menu-light
+  > .ant-menu.ant-menu-horizontal
+  > .ant-menu-submenu-open::after {
+  border-bottom-width: 2px;
+  border-bottom-color: none !important;
+}

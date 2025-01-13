@@ -1,0 +1,49 @@
+// Định dạng cho modal và title
+.modal-logout {
+  margin-top: 100px;
+  // margin-left: 150px;
+
+  .ant-modal-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 30px;
+  }
+
+  .ant-modal-footer {
+    display: flex;
+    justify-content: space-around; // Căn nút ở hai đầu
+
+    button {
+      padding: 8px 20px;
+      font-size: 14px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+
+    // Nút Huỷ
+    .cancel-modal {
+      background-color: #d9d9d9; // Màu xám
+      color: #000;
+
+      &:hover {
+        background-color: #c4c4c4; // Màu xám đậm hơn khi hover
+      }
+    }
+
+    // Nút Đăng xuất
+    .logout {
+      background-color: #454c8e; // Màu tím
+      color: #fff;
+
+      &:hover {
+        background-color: #3a4076; // Màu tím đậm hơn khi hover
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+/* App.scss */
+.layout-container {
+  display: flex;
+  height: 100vh; /* Chiều cao toàn bộ trang */
+}
+
+.layout-content {
+  flex: 1;
+  overflow-y: auto; /* Cho phép cuộn dọc cho phần nội dung */
+}
+
+.layout-sider {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh; /* Chiều cao của sidebar luôn bằng chiều cao của màn hình */
+  z-index: 100; /* Đảm bảo sidebar luôn ở trên */
+}
+
+.layout-main-content {
+  margin-left: 20%; /* Đảm bảo phần nội dung không bị chồng lên sidebar */
+  // padding: 20px;
+}
